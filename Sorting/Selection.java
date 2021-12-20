@@ -1,4 +1,13 @@
 public class Selection extends Sort{
+    /**
+     * Selection sort: Dividing the input list into two parts: a sorted sublist of items and a sublist of the remaining unsorted items. 
+     * Initially, the sorted sublist is empty and the unsorted sublist is the entire input list.
+     * Finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, 
+     * exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), 
+     * and moving the sublist boundaries one element to the right until the list is sorted
+     * @param <T>
+     * @param a List to be sorted
+     */
     public static <T extends Comparable<T>> void sort(T[] a) {
         int N = a.length;
         for (int i = 0; i < N; ++i) {
