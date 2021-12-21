@@ -1,4 +1,4 @@
-public class Insertion extends Sort {
+public class Insertion_Sort extends Sort {
     /**
      * Insertion sort: Checking each element of the list from left to right. 
      * At each element, removes it from the input data, finds the location it belongs and inserts it there. 

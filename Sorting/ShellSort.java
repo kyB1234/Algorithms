@@ -1,4 +1,4 @@
-public class Shell extends Sort {
+public class ShellSort extends Sort {
     /**
      * ShellSort: An optimization of insertion sort that allows the exchange of items that are far apart.
      * Arrange the list of elements, taking every hth element produces a sorted list.
