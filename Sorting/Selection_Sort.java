@@ -1,4 +1,4 @@
-public class Selection extends Sort{
+public class Selection_Sort extends Sort{
     /**
      * Selection sort: Dividing the input list into two parts: a sorted sublist of items and a sublist of the remaining unsorted items. 
      * Initially, the sorted sublist is empty and the unsorted sublist is the entire input list.
