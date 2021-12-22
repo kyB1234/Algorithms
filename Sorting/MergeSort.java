@@ -7,6 +7,7 @@ public class MergeSort extends Sort {
      * @param mid First sublist end position
      * @param hi Second sublist end position
      */
+    @SuppressWarnings("unchecked")
     public static <T extends Comparable<T>> void merge(T[] a, int lo, int mid, int hi) {
         int i = mid, j = hi - mid - 1;
         T[] rightList = (T[]) new Comparable[hi - mid];
