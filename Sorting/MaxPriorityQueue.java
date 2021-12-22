@@ -84,5 +84,4 @@ public class MaxPriorityQueue<Key extends Comparable<Key>> {
             k = j;
         }
     }
-
 }
