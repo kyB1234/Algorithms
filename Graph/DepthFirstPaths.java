@@ -5,7 +5,7 @@ import java.util.LinkedList;
  * Find Path using depth first search
  */
 public class DepthFirstPaths {
-    private boolean[] marked;
+    private boolean[] marked; // Whether or not reach to the point
     private int[] edgeTo; // Last point at path from start point to end potin;
     private final int s; // Start point
 
