@@ -6,6 +6,7 @@ import java.util.Queue;
 
 /**
  * Delay implementation of Prim algorithm for MST
+ * (Store all edge even invaild edge)
  */
 public class LazyPrimMST {
     private boolean[] marked;
