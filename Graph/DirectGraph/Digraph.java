@@ -1,14 +1,16 @@
+package DirectGraph;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
- * Undirect graph
+ * Direction graph
  */
-public class Graph {
+public class Digraph {
     private final int V; // Number of vertex
     private int E; // Number of edge
     private List<List<Integer>> adj; // Adjacency list
 
-    public Graph(int V) {
+    public Digraph(int V) {
         this.V = V;
         this.E = 0;
         adj = new ArrayList<>();
@@ -28,12 +30,12 @@ public class Graph {
     public int E() {return E;}
     /**
      * Create a edge between two vertex
+     * Only difference compare to undirection graph
      * @param v 
      * @param w
      */
     public void addEdge(int v, int w) {
         adj.get(v).add(w);
-        adj.get(w).add(v);
         ++E;
     }
     /**
@@ -43,5 +45,19 @@ public class Graph {
      */
     public List<Integer> adj(int v) {
         return adj.get(v);
+    }
+
+    /**
+     * Reverse direction of graph
+     * @return
+     */
+    public Digraph reverse() {
+        Digraph R = new Digraph(V);
+        for (int v = 0; v < V; ++v) {
+            for (int w : adj(v)) {
+                R.addEdge(w, v);
+            }
+        }
+        return R;
     }
 }
