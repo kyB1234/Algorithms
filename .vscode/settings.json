@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         "Sorting",
         "Searching",
-        "Graph"
+        "Graph",
+        ""
     ]
 }
