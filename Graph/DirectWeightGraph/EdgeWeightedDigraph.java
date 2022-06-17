@@ -19,9 +19,15 @@ public class EdgeWeightedDigraph {
             adj.add(new ArrayList<>());
         }
     }
-    
-    public int V() { return V; }
-    public int E() { return E; }
+
+    public int V() {
+        return V;
+    }
+
+    public int E() {
+        return E;
+    }
+
     public void addEdge(DirectedEdge e) {
         adj.get(e.from()).add(e);
         ++E;
